@@ -2,7 +2,7 @@
 
 const loaderPage = document.querySelector(".page-loader");
 
-window.addEventListener("DOMContentLoaded",()=>{
+window.addEventListener("load",()=>{
     loaderPage.classList.remove("page-loader-show")
 })
 
