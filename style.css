@@ -23,6 +23,38 @@ section {
     margin-bottom: 80px;
 }
 
+/* pageloader */
+
+.page-loader{
+    background-color: black;
+    z-index: 1000 !important;
+    transition: all 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.page-loader-show{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.page-loader .loader{
+    width: 200px;
+    height: 200px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    border-top-color: rgb(64, 12, 255);
+    animation: rotate 1.5s linear 0s infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* pageloader */
+
 /* nav start */
 
 nav {

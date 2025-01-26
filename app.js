@@ -1,3 +1,13 @@
+// Page loader
+
+const loaderPage = document.querySelector(".page-loader");
+
+window.addEventListener("load",()=>{
+    loaderPage.classList.remove("page-loader-show")
+})
+
+// Page loader
+
 let movieList = [
     "./images/Videos/hero-1.mp4",
     "./images/Videos/hero-2.mp4",
