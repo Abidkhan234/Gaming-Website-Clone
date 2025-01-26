@@ -5,7 +5,7 @@ let movieList = [
     "./images/Videos/hero-4.mp4"
 ];
 
-const videoEle = document.querySelector(".hero-vid");
+const videoEle = document.querySelector(".video-box video");
 
 const nextBtn = document.querySelector("#next-btn");
 
