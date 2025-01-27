@@ -25,7 +25,7 @@ section {
 
 /* pageloader */
 
-.page-loader{
+.page-loader {
     background-color: black;
     z-index: 1000 !important;
     transition: all 0.5s;
@@ -33,12 +33,12 @@ section {
     pointer-events: none;
 }
 
-.page-loader-show{
+.page-loader-show {
     opacity: 1;
     pointer-events: all;
 }
 
-.page-loader .loader{
+.page-loader .loader {
     width: 200px;
     height: 200px;
     border: 10px solid gray;
@@ -48,7 +48,7 @@ section {
 }
 
 @keyframes rotate {
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -219,9 +219,17 @@ nav .nav-bar i {
 
 @media (max-width:425px) {
 
+    .hero-section .content-text-1 {
+        left: 5px;
+    }
+
+    .hero-section .content-text-2{
+        right: 5px;
+    }
+
     .hero-section .content-text-2 h1,
     .hero-section .content-text-1 h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
@@ -483,7 +491,7 @@ nav .nav-bar i {
         width: 200px;
     }
 
-    .contact-section .contact-section-content img:nth-child(4){
+    .contact-section .contact-section-content img:nth-child(4) {
         top: 25% !important;
     }
 }
@@ -493,19 +501,30 @@ nav .nav-bar i {
         font-size: 40px;
         max-width: 300px;
     }
+
     .contact-section .contact-section-content img {
         width: 150px;
     }
 
-    .contact-section .contact-section-content img:nth-child(4){
+    .contact-section .contact-section-content img:nth-child(4) {
         top: 30% !important;
         right: 0% !important;
     }
 }
 
 @media (max-width:525px) {
-    .contact-section .contact-section-content img:nth-child(4){
+    .contact-section .contact-section-content img:nth-child(4) {
         display: none;
+    }
+
+    .contact-section .contact-section-content img:nth-child(2) {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .contact-section .contact-section-content img:nth-child(3) {
+        left: 50% !important;
+        transform: translateX(-50%);
     }
 }
 
@@ -516,6 +535,21 @@ nav .nav-bar i {
 footer {
     background-color: rgba(211, 211, 211, 0.21);
     backdrop-filter: blur(10px);
+}
+
+footer .footer-icons i {
+    font-size: 35px;
+}
+
+@media (max-width:550px) {
+    footer .footer-icons {
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    footer span {
+        display: none;
+    }
 }
 
 /* footer end */
